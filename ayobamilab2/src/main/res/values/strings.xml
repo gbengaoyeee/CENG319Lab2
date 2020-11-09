@@ -2,4 +2,5 @@
 <!--    @student_id n01326482-->
 <resources>
     <string name="app_name">AyobamiLab2</string>
+    <string name="homepageEnterString">Enter</string>
 </resources>
