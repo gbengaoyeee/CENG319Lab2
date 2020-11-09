@@ -3,4 +3,8 @@
 <resources>
     <string name="app_name">AyobamiLab2</string>
     <string name="homepageEnterString">Enter</string>
+    <string name="realStateSummary">Real State allows you to view and buy your desired homes</string>
+    <string name="apartmentMenuString">Apartment</string>
+    <string name="detachedMenuString">Detached Home</string>
+    <string name="semiDetachedMenuString">Semi-Detached</string>
 </resources>

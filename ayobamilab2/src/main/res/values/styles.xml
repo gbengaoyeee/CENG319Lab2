@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="enterBtnStyle">
+        <item name="android:text">@string/homepageEnterString</item>
+        <item name="android:textColor">@color/textColorRed</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="secondScreenDetailStyle">
+        <item name="android:text">@string/realStateSummary</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

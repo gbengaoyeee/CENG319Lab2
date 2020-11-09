@@ -22,7 +22,8 @@ public class AyobamiActivity extends AppCompatActivity {
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent secondScreen =
+                Intent secondScreen = new Intent(AyobamiActivity.this, OyesanyaSecondScreen.class);
+                startActivity(secondScreen);
             }
         });
     }
