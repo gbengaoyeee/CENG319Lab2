@@ -183,6 +183,43 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 Toast.makeText(OyesanyaSecondScreen.this, ""+selectedHomes.size(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        checkBox4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkBox1.isChecked()){
+                    switch (currentSelectedItem.getItemId()){
+                        case R.id.apartmentMenuOption:
+                            selectedHomes.add(apartmentList.apartmentList[3]);
+                            break;
+                        case R.id.detachedMenuOption:
+                            selectedHomes.add(detachedList.detachedList[3]);
+                            break;
+                        case R.id.semiDetachedMenuOption:
+                            selectedHomes.add(semiDetachedList.semidetachedList[3]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                else{
+                    switch (currentSelectedItem.getItemId()){
+                        case R.id.apartmentMenuOption:
+                            selectedHomes.remove(apartmentList.apartmentList[3]);
+                            break;
+                        case R.id.detachedMenuOption:
+                            selectedHomes.remove(detachedList.detachedList[3]);
+                            break;
+                        case R.id.semiDetachedMenuOption:
+                            selectedHomes.remove(semiDetachedList.semidetachedList[3]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                Toast.makeText(OyesanyaSecondScreen.this, ""+selectedHomes.size(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
