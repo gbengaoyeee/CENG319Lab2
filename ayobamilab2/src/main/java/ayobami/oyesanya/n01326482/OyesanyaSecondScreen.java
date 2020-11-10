@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -30,6 +31,7 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
 
     ListView listView;
     MenuItem currentSelectedItem;
+    ImageButton checkoutButton;
 
     CheckBox checkBox1, checkBox2, checkBox3, checkBox4;
     ImageView homeImage1, homeImage2, homeImage3, homeImage4;
@@ -72,6 +74,9 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         price3 = findViewById(R.id.price3);
         price4 = findViewById(R.id.price4);
 
+        checkoutButton = findViewById(R.id.checkoutBtn);
+        
+
         //Handle Checkbox checks
         checkBox1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,12 +84,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 if(checkBox1.isChecked()){
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[0].isSelected = true;
                             selectedHomes.add(apartmentList.apartmentList[0]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[0].isSelected = true;
                             selectedHomes.add(detachedList.detachedList[0]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[0].isSelected = true;
                             selectedHomes.add(semiDetachedList.semidetachedList[0]);
                             break;
                         default:
@@ -94,12 +102,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 else{
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[0].isSelected = false;
                             selectedHomes.remove(apartmentList.apartmentList[0]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[0].isSelected = false;
                             selectedHomes.remove(detachedList.detachedList[0]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[0].isSelected = false;
                             selectedHomes.remove(semiDetachedList.semidetachedList[0]);
                             break;
                         default:
@@ -116,12 +127,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 if(checkBox2.isChecked()){
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[1].isSelected = true;
                             selectedHomes.add(apartmentList.apartmentList[1]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[1].isSelected = true;
                             selectedHomes.add(detachedList.detachedList[1]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[1].isSelected = true;
                             selectedHomes.add(semiDetachedList.semidetachedList[1]);
                             break;
                         default:
@@ -131,12 +145,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 else{
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[1].isSelected = false;
                             selectedHomes.remove(apartmentList.apartmentList[1]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[1].isSelected = false;
                             selectedHomes.remove(detachedList.detachedList[1]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[1].isSelected = false;
                             selectedHomes.remove(semiDetachedList.semidetachedList[1]);
                             break;
                         default:
@@ -150,15 +167,18 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         checkBox3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(checkBox1.isChecked()){
+                if(checkBox3.isChecked()){
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[2].isSelected = true;
                             selectedHomes.add(apartmentList.apartmentList[2]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[2].isSelected = true;
                             selectedHomes.add(detachedList.detachedList[2]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[2].isSelected = true;
                             selectedHomes.add(semiDetachedList.semidetachedList[2]);
                             break;
                         default:
@@ -168,12 +188,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 else{
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[2].isSelected = false;
                             selectedHomes.remove(apartmentList.apartmentList[2]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[2].isSelected = false;
                             selectedHomes.remove(detachedList.detachedList[2]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[2].isSelected = false;
                             selectedHomes.remove(semiDetachedList.semidetachedList[2]);
                             break;
                         default:
@@ -187,15 +210,18 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         checkBox4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(checkBox1.isChecked()){
+                if(checkBox4.isChecked()){
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[3].isSelected = true;
                             selectedHomes.add(apartmentList.apartmentList[3]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[3].isSelected = true;
                             selectedHomes.add(detachedList.detachedList[3]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[3].isSelected = true;
                             selectedHomes.add(semiDetachedList.semidetachedList[3]);
                             break;
                         default:
@@ -205,12 +231,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 else{
                     switch (currentSelectedItem.getItemId()){
                         case R.id.apartmentMenuOption:
+                            apartmentList.apartmentList[3].isSelected = false;
                             selectedHomes.remove(apartmentList.apartmentList[3]);
                             break;
                         case R.id.detachedMenuOption:
+                            detachedList.detachedList[3].isSelected = false;
                             selectedHomes.remove(detachedList.detachedList[3]);
                             break;
                         case R.id.semiDetachedMenuOption:
+                            semiDetachedList.semidetachedList[3].isSelected = false;
                             selectedHomes.remove(semiDetachedList.semidetachedList[3]);
                             break;
                         default:
@@ -239,6 +268,11 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.apartmentMenuOption:
                 //do apartment here
+                checkBox1.setChecked(apartmentList.apartmentList[0].isSelected);
+                checkBox2.setChecked(apartmentList.apartmentList[1].isSelected);
+                checkBox3.setChecked(apartmentList.apartmentList[2].isSelected);
+                checkBox4.setChecked(apartmentList.apartmentList[3].isSelected);
+
                 homeImage1.setImageResource(apartmentList.apartmentList[0].image);
                 homeImage2.setImageResource(apartmentList.apartmentList[1].image);
                 homeImage3.setImageResource(apartmentList.apartmentList[2].image);
@@ -256,6 +290,11 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 return true;
             case R.id.detachedMenuOption:
                 //do detached here
+                checkBox1.setChecked(detachedList.detachedList[0].isSelected);
+                checkBox2.setChecked(detachedList.detachedList[1].isSelected);
+                checkBox3.setChecked(detachedList.detachedList[2].isSelected);
+                checkBox4.setChecked(detachedList.detachedList[3].isSelected);
+
                 homeImage1.setImageResource(detachedList.detachedList[0].image);
                 homeImage2.setImageResource(detachedList.detachedList[1].image);
                 homeImage3.setImageResource(detachedList.detachedList[2].image);
@@ -271,8 +310,14 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
                 price3.setText(detachedList.detachedList[2].price);
                 price4.setText(detachedList.detachedList[3].price);
                 return true;
+
             case R.id.semiDetachedMenuOption:
                 //do semidetached here
+                checkBox1.setChecked(semiDetachedList.semidetachedList[0].isSelected);
+                checkBox2.setChecked(semiDetachedList.semidetachedList[1].isSelected);
+                checkBox3.setChecked(semiDetachedList.semidetachedList[2].isSelected);
+                checkBox4.setChecked(semiDetachedList.semidetachedList[3].isSelected);
+
                 homeImage1.setImageResource(semiDetachedList.semidetachedList[0].image);
                 homeImage2.setImageResource(semiDetachedList.semidetachedList[1].image);
                 homeImage3.setImageResource(semiDetachedList.semidetachedList[2].image);

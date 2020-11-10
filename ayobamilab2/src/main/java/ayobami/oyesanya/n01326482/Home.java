@@ -10,6 +10,7 @@ import java.util.Objects;
 public class Home {
     String address, price;
     int image;
+    boolean isSelected = false;
     public Home(String address, String price, int image){
         this.address = address;
         this.price = price;
