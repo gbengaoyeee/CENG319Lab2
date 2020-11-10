@@ -99,11 +99,13 @@
 
         <TextView
             android:id="@+id/address1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="address"
             android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/homeImage1"
             app:layout_constraintTop_toTopOf="@+id/homeImage1" />
 
@@ -119,11 +121,12 @@
 
         <TextView
             android:id="@+id/address2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="address"
             android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/homeImage2"
             app:layout_constraintTop_toTopOf="@+id/homeImage2" />
 
@@ -139,11 +142,12 @@
 
         <TextView
             android:id="@+id/address3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="address"
             android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/address2"
             app:layout_constraintStart_toEndOf="@+id/homeImage3"
             app:layout_constraintTop_toTopOf="@+id/homeImage3" />
 
@@ -159,11 +163,12 @@
 
         <TextView
             android:id="@+id/address4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="address"
             android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/address3"
             app:layout_constraintStart_toEndOf="@+id/homeImage4"
             app:layout_constraintTop_toTopOf="@+id/homeImage4" />
 
