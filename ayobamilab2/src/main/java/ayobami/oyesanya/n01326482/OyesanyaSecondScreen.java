@@ -30,6 +30,14 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
             case R.id.apartmentMenuOption:
                 //do apartment here
                 return true;
+            case R.id.detachedMenuOption:
+                //do detached here
+                return true;
+            case R.id.semiDetachedMenuOption:
+                //do semidetached here
+                return true;
+            default:
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

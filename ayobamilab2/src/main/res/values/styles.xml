@@ -15,7 +15,7 @@
 
     <style name="secondScreenDetailStyle">
         <item name="android:text">@string/realStateSummary</item>
-        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textColor">@color/textColorBlack</item>
         <item name="android:textSize">20sp</item>
     </style>
 
