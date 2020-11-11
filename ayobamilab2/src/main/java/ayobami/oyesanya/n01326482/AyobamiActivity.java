@@ -1,7 +1,9 @@
 package ayobami.oyesanya.n01326482;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,5 +28,21 @@ public class AyobamiActivity extends AppCompatActivity {
                 startActivity(secondScreen);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.alertDialogQuitMsg)
+                .setPositiveButton(R.string.alertQuitYes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                })
+                .setNegativeButton(R.string.alertQuitNo, null);
+
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }

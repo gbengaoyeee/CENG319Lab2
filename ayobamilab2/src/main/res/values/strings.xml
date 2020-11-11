@@ -7,4 +7,7 @@
     <string name="apartmentMenuString">Apartment</string>
     <string name="detachedMenuString">Detached Home</string>
     <string name="semiDetachedMenuString">Semi-Detached</string>
+    <string name="alertDialogQuitMsg">Do you want to quit the app?</string>
+    <string name="alertQuitYes">Yes</string>
+    <string name="alertQuitNo">No</string>
 </resources>
