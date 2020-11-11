@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".OyesanyaSecondScreen"/>
+        <activity android:name=".OyesanyaCheckOutScreen"/>
     </application>
 
 </manifest>

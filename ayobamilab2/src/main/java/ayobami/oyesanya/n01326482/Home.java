@@ -1,5 +1,8 @@
 package ayobami.oyesanya.n01326482;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -7,7 +10,7 @@ import java.util.Objects;
  * @author Ayobami Oyesanya
  * @student_id n01326482
  */
-public class Home {
+public class Home implements Parcelable {
     String address, price;
     int image;
     boolean isSelected = false;
@@ -30,6 +33,38 @@ public class Home {
     @Override
     public int hashCode() {
         return Objects.hash(address, price, image);
+    }
+
+    protected Home(Parcel in) {
+        address = in.readString();
+        price = in.readString();
+        image = in.readInt();
+        isSelected = in.readByte() != 0;
+    }
+
+    public static final Creator<Home> CREATOR = new Creator<Home>() {
+        @Override
+        public Home createFromParcel(Parcel in) {
+            return new Home(in);
+        }
+
+        @Override
+        public Home[] newArray(int size) {
+            return new Home[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(address);
+        parcel.writeString(price);
+        parcel.writeInt(image);
+        parcel.writeByte((byte) (isSelected ? 1 : 0));
     }
 }
 

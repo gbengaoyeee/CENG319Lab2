@@ -1,6 +1,7 @@
 package ayobami.oyesanya.n01326482;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,7 +78,15 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         price4 = findViewById(R.id.price4);
 
         checkoutButton = findViewById(R.id.checkoutBtn);
-        
+        checkoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent checkoutActivity = new Intent(OyesanyaSecondScreen.this, OyesanyaCheckOutScreen.class);
+                ArrayList<Home> selectedHomesArr = new ArrayList<Home>(selectedHomes);
+                checkoutActivity.putExtra("selectedHomes", selectedHomesArr);
+                startActivity(checkoutActivity);
+            }
+        });
 
         //Handle Checkbox checks
         checkBox1.setOnClickListener(new View.OnClickListener() {
