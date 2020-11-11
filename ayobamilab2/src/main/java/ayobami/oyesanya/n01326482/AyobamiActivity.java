@@ -20,7 +20,7 @@ public class AyobamiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ayobami);
 
-        Button enter = findViewById(R.id.mainScreenEnter);
+        Button enter = findViewById(R.id.ayobamiMainScreenEnter);
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".OyesanyaCheckOutScreen">
+    tools:context=".OyesanyaCheckOutScreen"
+    android:background="@color/colorGreen">
 
     <RadioGroup
-        android:id="@+id/checkoutRadioGrp"
+        android:id="@+id/ayobamiCheckoutRadioGrp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

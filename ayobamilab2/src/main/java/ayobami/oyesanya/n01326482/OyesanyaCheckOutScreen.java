@@ -24,7 +24,7 @@ public class OyesanyaCheckOutScreen extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oyesanya_checkout);
-        checkoutRadioGrp = findViewById(R.id.checkoutRadioGrp);
+        checkoutRadioGrp = findViewById(R.id.ayobamiCheckoutRadioGrp);
 
         Intent incomingIntent = getIntent();
         selectedHomes = incomingIntent.getParcelableArrayListExtra("selectedHomes");

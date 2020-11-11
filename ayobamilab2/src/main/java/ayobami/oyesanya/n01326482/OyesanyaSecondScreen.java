@@ -51,33 +51,33 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Set initial screen to be visible
         setContentView(R.layout.activity_oyesanya_second_screen);
-        ConstraintLayout initialScreen = findViewById(R.id.initialSecondScreen);
+        ConstraintLayout initialScreen = findViewById(R.id.ayobamiInitialSecondScreen);
         initialScreen.setVisibility(View.VISIBLE);
-        ConstraintLayout updatedScreen = findViewById(R.id.updatedSecondScreen);
+        ConstraintLayout updatedScreen = findViewById(R.id.ayobamiUpdatedSecondScreen);
         updatedScreen.setVisibility(View.GONE);
 
         // Setting components
-        checkBox1 = findViewById(R.id.checkbox1);
-        checkBox2 = findViewById(R.id.checkbox2);
-        checkBox3 = findViewById(R.id.checkbox3);
-        checkBox4 = findViewById(R.id.checkbox4);
+        checkBox1 = findViewById(R.id.ayobamiCheckbox1);
+        checkBox2 = findViewById(R.id.ayobamiCheckbox2);
+        checkBox3 = findViewById(R.id.ayobamiCheckbox3);
+        checkBox4 = findViewById(R.id.ayobamiCheckbox4);
 
-        homeImage1 = findViewById(R.id.homeImage1);
-        homeImage2 = findViewById(R.id.homeImage2);
-        homeImage3 = findViewById(R.id.homeImage3);
-        homeImage4 = findViewById(R.id.homeImage4);
+        homeImage1 = findViewById(R.id.ayobamiHomeImage1);
+        homeImage2 = findViewById(R.id.ayobamiHomeImage2);
+        homeImage3 = findViewById(R.id.ayobamiHomeImage3);
+        homeImage4 = findViewById(R.id.ayobamiHomeImage4);
 
-        address1 = findViewById(R.id.address1);
-        address2 = findViewById(R.id.address2);
-        address3 = findViewById(R.id.address3);
-        address4 = findViewById(R.id.address4);
+        address1 = findViewById(R.id.ayobamiAddress1);
+        address2 = findViewById(R.id.ayobamiAddress2);
+        address3 = findViewById(R.id.ayobamiAddress3);
+        address4 = findViewById(R.id.ayobamiAddress4);
 
-        price1 = findViewById(R.id.price1);
-        price2 = findViewById(R.id.price2);
-        price3 = findViewById(R.id.price3);
-        price4 = findViewById(R.id.price4);
+        price1 = findViewById(R.id.ayobamiPrice1);
+        price2 = findViewById(R.id.ayobamiPrice2);
+        price3 = findViewById(R.id.ayobamiPrice3);
+        price4 = findViewById(R.id.ayobamiPrice4);
 
-        checkoutButton = findViewById(R.id.checkoutBtn);
+        checkoutButton = findViewById(R.id.ayobamiCheckoutBtn);
         checkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -272,9 +272,9 @@ public class OyesanyaSecondScreen extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         this.currentSelectedItem = item;
-        ConstraintLayout initialScreen = findViewById(R.id.initialSecondScreen);
+        ConstraintLayout initialScreen = findViewById(R.id.ayobamiInitialSecondScreen);
         initialScreen.setVisibility(View.GONE);
-        ConstraintLayout updatedScreen = findViewById(R.id.updatedSecondScreen);
+        ConstraintLayout updatedScreen = findViewById(R.id.ayobamiUpdatedSecondScreen);
         updatedScreen.setVisibility(View.VISIBLE);
         switch (item.getItemId()){
             case R.id.apartmentMenuOption:

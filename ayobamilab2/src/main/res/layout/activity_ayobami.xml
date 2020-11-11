@@ -8,7 +8,7 @@
     android:background="@color/mainPageColor">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ayobamiImageView"
         android:layout_width="150dp"
         android:layout_height="130dp"
         android:src="@drawable/home_logo"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.26999998" />
 
     <Button
-        android:id="@+id/mainScreenEnter"
+        android:id="@+id/ayobamiMainScreenEnter"
         style="@style/enterBtnStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,6 +28,6 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ayobamiImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
