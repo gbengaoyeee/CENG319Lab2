@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AyobamiLab2</string>
+    <string name="homepageEnterString">Entrer</string>
+    <string name="realStateSummary">"Real State vous permet de visualiser et d'acheter vos maisons souhaitées "</string>
+    <string name="apartmentMenuString">appartement</string>
+    <string name="detachedMenuString">"maison individuelle "</string>
+    <string name="semiDetachedMenuString">"maison jumelée "</string>
+    <string name="alertDialogQuitMsg">"Voulez-vous quitter l'application? "</string>
+    <string name="alertQuitYes">Oui</string>
+    <string name="alertQuitNo">Non</string>
+</resources>
